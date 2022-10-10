@@ -55,7 +55,7 @@ class ToDo() {
     }
 
     fun changeTask(chtask: Task) {
-        println("Task: ${chtask.note} , Complete: ${!chtask.isComplete}")
-
+        chtask.isComplete = !chtask.isComplete
+        println("Task: ${chtask.note} , Complete: ${chtask.isComplete}")
     }
 }
